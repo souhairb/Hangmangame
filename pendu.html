@@ -1,71 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head class="header">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="pendu.js"></script>
+    <script src="pendu.js" type="module"></script>
     <link type="text/css" rel="stylesheet" href="style.css">
     <title>Hangman</title>
-    <h1> HANGMAN </h1>
 </head>
 <br>
 
 <body>
-    <div id="play">
-        <div class="gameContainer">
-            <div class="wordToGuess">_ _ _ _ _ </div>
-            <div class="hangmanImg">
-                <img src="hangmanImg/hmTest.png">
+    <div class="game">
+        <h1> HANGMAN </h1>
+        <div id="play">
+            <div class="gameContainer">
+                <div class="wordUnderscore"></div>
+                <div class="hangmanImg">
+                    <img class="hangmanPic" src="hangmanImg/0.png">
+                </div>
+            </div>
+
+            <table id="keyboard">
+                <tr>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                    <td>D</td>
+                    <td>E</td>
+                    <td>F</td>
+                    <td>G</td>
+                    <td>H</td>
+                    <td>I</td>
+                </tr>
+                <tr>
+                    <td>J</td>
+                    <td>K</td>
+                    <td>L</td>
+                    <td>M</td>
+                    <td>N</td>
+                    <td>O</td>
+                    <td>P</td>
+                    <td>Q</td>
+                    <td>R</td>
+                </tr>
+                <tr>
+                    <td>S</td>
+                    <td>T</td>
+                    <td>U</td>
+                    <td>V</td>
+                    <td>W</td>
+                    <td>X</td>
+                    <td>Y</td>
+                    <td>Z</td>
+                </tr>
+            </table>
+
+            <div id="timer">01:00 </div>
+            <br>
+            <div id="playAgain">
+                <section class=" playAgain flexedItem">
+                    <button> Play!</button>
+                </section>
             </div>
         </div>
-
-        <table id="keyboard">
-            <tr>
-                <td>A</td>
-                <td>B</td>
-                <td>C</td>
-                <td>D</td>
-                <td>E</td>
-                <td>F</td>
-                <td>G</td>
-                <td>H</td>
-                <td>I</td>
-            </tr>
-            <tr>
-                <td>J</td>
-                <td>K</td>
-                <td>L</td>
-                <td>M</td>
-                <td>N</td>
-                <td>O</td>
-                <td>P</td>
-                <td>Q</td>
-                <td>R</td>
-            </tr>
-            <tr>
-                <td>S</td>
-                <td>T</td>
-                <td>U</td>
-                <td>V</td>
-                <td>W</td>
-                <td>X</td>
-                <td>Y</td>
-                <td>Z</td>
-            </tr>
-        </table>
-
-        <div id="timer">01:00 </div>
     </div>
-    <br>
-    <div id="playAgain">
-        <section class=" playAgain flexedItem">
-            <button> Play!</button>
-        </section>
-    </div>
-
-
 </body>
+
 
 </html>
