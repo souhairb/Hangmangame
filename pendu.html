@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="pendu.js" type="module"></script>
+    <script src="pendu.js" defer></script>
     <link type="text/css" rel="stylesheet" href="style.css">
     <title>Hangman</title>
 </head>
@@ -18,50 +18,51 @@
             <div class="gameContainer">
                 <div class="wordUnderscore"></div>
                 <div class="hangmanImg">
-                    <img class="hangmanPic" src="hangmanImg/0.png">
+                    <img id="hangman" class="hangmanPic" src="hangmanImg/0.png">
                 </div>
             </div>
 
             <table id="keyboard">
                 <tr>
-                    <td>A</td>
-                    <td>B</td>
-                    <td>C</td>
-                    <td>D</td>
-                    <td>E</td>
-                    <td>F</td>
-                    <td>G</td>
-                    <td>H</td>
-                    <td>I</td>
+                    <td class="letter" id="calque_a">A</td>
+                    <td class="letter" id="calque_b">B</td>
+                    <td class="letter" id="calque_c">C</td>
+                    <td class="letter" id="calque_d">D</td>
+                    <td class="letter" id="calque_e">E</td>
+                    <td class="letter" id="calque_f">F</td>
+                    <td class="letter" id="calque_g">G</td>
+                    <td class="letter" id="calque_h">H</td>
+                    <td class="letter" id="calque_i">I</td>
                 </tr>
                 <tr>
-                    <td>J</td>
-                    <td>K</td>
-                    <td>L</td>
-                    <td>M</td>
-                    <td>N</td>
-                    <td>O</td>
-                    <td>P</td>
-                    <td>Q</td>
-                    <td>R</td>
+                    <td class="letter" id="calque_j">J</td>
+                    <td class="letter" id="calque_k">K</td>
+                    <td class="letter" id="calque_l">L</td>
+                    <td class="letter" id="calque_m">M</td>
+                    <td class="letter" id="calque_n">N</td>
+                    <td class="letter" id="calque_o">O</td>
+                    <td class="letter" id="calque_p">P</td>
+                    <td class="letter" id="calque_q">Q</td>
+                    <td class="letter" id="calque_r">R</td>
                 </tr>
                 <tr>
-                    <td>S</td>
-                    <td>T</td>
-                    <td>U</td>
-                    <td>V</td>
-                    <td>W</td>
-                    <td>X</td>
-                    <td>Y</td>
-                    <td>Z</td>
+                    <td class="letter" id="calque_s">S</td>
+                    <td class="letter" id="calque_t">T</td>
+                    <td class="letter" id="calque_u">U</td>
+                    <td class="letter" id="calque_v">V</td>
+                    <td class="letter" id="calque_w">W</td>
+                    <td class="letter" id="calque_x">X</td>
+                    <td class="letter" id="calque_y">Y</td>
+                    <td class="letter" id="calque_z">Z</td>
                 </tr>
             </table>
+
 
             <div id="timer">01:00 </div>
             <br>
             <div id="playAgain">
                 <section class=" playAgain flexedItem">
-                    <button> Play!</button>
+                    <button onclick="start()">START</button>
                 </section>
             </div>
         </div>

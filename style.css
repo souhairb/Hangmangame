@@ -13,6 +13,8 @@ body {
   margin: 0px;
   justify-content: center;
   display: flex;
+  /*background: url(hangmanImg/backgroundtest3.jpeg) 0 0 no-repeat;*/
+  background-size: cover;
 }
 
 .game {
@@ -83,7 +85,7 @@ table {
 
 button {
   background-color: #ffffff;
-  font-size: 70px;
+  font-size: 40px;
   color: #1d522f;
   border-width: 10px;
   border-color: #1d522f;
