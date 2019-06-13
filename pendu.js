@@ -142,7 +142,7 @@ function start() {
 
 function resetLetterColor() {
   const letters = document.querySelectorAll(".letter");
-  letters.forEach(let => let.style.backgroundColor = "#1d522f" )
+  letters.forEach(let => let.style.backgroundColor = "#ffffff" )
 }
 
 document.addEventListener("keypress", event => {
@@ -151,7 +151,7 @@ document.addEventListener("keypress", event => {
   console.log(letterClick);
   document.getElementById(
     "calque_" + letterClick.toLowerCase()
-  ).style.backgroundColor = "#666666";
+  ).style.backgroundColor = "#f0fb1b";
 
   //si la lettre est correcte:
   if (errorCounter > -6) {
