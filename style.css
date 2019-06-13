@@ -4,13 +4,21 @@ h1 {
   align-items: center;
   width: 100%;
   color: #d4841b;
+  font-family: cursive;
+  margin-bottom: 10%;
+  font-size: 90px;
+
+}
+
+
+
 }
 
 body {
   font-family: "Theinhardt", sans-serif;
   color: #1e1e26;
   font-size: 50px;
-  margin: 0px;
+  margin: 5px;
   justify-content: center;
   display: flex;
   /*background: url(hangmanImg/backgroundtest3.jpeg) 0 0 no-repeat;*/
@@ -48,29 +56,26 @@ body {
 
 #keyboard {
   width: 55%;
-  height: 100%;
+  height: 100px;
   text-align: center;
   font-weight: bold;
   cursor: pointer;
-  border: 1px outset #d4841b;
   padding: 10px;
   font-size: 70px;
-  background-color: #1d522f;
-  color: #ffffff;
   margin-bottom: 50px;
+  color: #fff;
 }
 
-table {
-  white-space: normal;
-  line-height: normal;
-  font-weight: normal;
-  font-size: medium;
-  font-style: normal;
-  text-align: start;
-  font-variant: normal;
-  display: table;
-  border-collapse: separate;
-  border-spacing: 2px;
+.letter {
+  margin: 0 5px 5px 0;
+  width: 40px;
+  height: 80px;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  border: 1px outset #d4841b;
+  border-radius: 10%;
+  font-family: cursive;
+  font-size: 80%;
 }
 
 #play {

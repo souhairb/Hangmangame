@@ -1,4 +1,4 @@
-//créer l'array avec les mots à deviner
+///créer l'array avec les mots à deviner
 var wordsToGuess = [
   "awkward",
   "bagpipes",
@@ -80,7 +80,7 @@ function timer() {
       start();
     }
     document.getElementById("timer").innerHTML = timePassed;
-  }, 100);
+  }, 1000);
 }
 // document.getElementById("timer").innerHTML = timer();
 
@@ -122,6 +122,7 @@ function start() {
  wordToGuess=[];
  timePassed=60;
  document.getElementById("hangman").src = imagesArray[0];
+ errorCounter=0;
  resetLetterColor();
 
   if (endGame === false) {
@@ -166,30 +167,38 @@ document.addEventListener("keypress", event => {
       if(wordUnderscore.join("")===wordToGuess){
         // alert("Bravo!");
         wordUnderscore = [];
+        setTimeout(() => alert("Bravo!"), 1000)
         setTimeout(() =>{
-          start();
-        }, 1000)
+         start();
+          }, 2000)
       }
       //si la lettre est fausse
     } else {
       errorCounter += wordToGuess.indexOf(letterClick);
-      alert("Oups!");
       console.log(errorCounter);
       if (errorCounter === -1) {
         document.getElementById("hangman").src = imagesArray[1];
+        alert("Oups!");
       } else if (errorCounter === -2) {
         document.getElementById("hangman").src = imagesArray[2];
+        alert("Oups!");
       } else if (errorCounter === -3) {
         document.getElementById("hangman").src = imagesArray[3];
+        alert("Oups!");
       } else if (errorCounter === -4) {
         document.getElementById("hangman").src = imagesArray[4];
+        alert("Oups!");
       } else if (errorCounter === -5) {
         document.getElementById("hangman").src = imagesArray[5];
+        alert("Oups!");
       } else if (errorCounter === -6) {
         document.getElementById("hangman").src = imagesArray[6];
-        timePassed = 0;
-        endGame = true;
-        alert("You Lost");
+        setTimeout(() => alert("Oups!"), 1000)
+        setTimeout(() =>{
+         start();
+          }, 2000)
+      //  timePassed = 0;
+      //  start();
       }
     }
   } 
