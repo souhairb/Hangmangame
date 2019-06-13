@@ -12,61 +12,65 @@
 <br>
 
 <body>
-    <div class="game">
+    <div class="title">
         <h1> HANGMAN </h1>
-        <div id="play">
+        <img class="hangmantitleimg" src="hangmanImg/hangmanImageTitle2.jpg">
+    </div>
+    <div id="game">
+        <section class="time_start">
+            <div id="timer">01:00 </div>
+            <button onclick="start()">START</button>
+
+        </section>
+        <br>
+        <div class="gameWrapper">
             <div class="gameContainer">
                 <div class="wordUnderscore"></div>
+                <table class="keyboard" cellspacing="30px">
+                    <tr>
+                        <td class="letter" id="calque_a">A</td>
+                        <td class="letter" id="calque_b">B</td>
+                        <td class="letter" id="calque_c">C</td>
+                        <td class="letter" id="calque_d">D</td>
+                        <td class="letter" id="calque_e">E</td>
+                        <td class="letter" id="calque_f">F</td>
+                        <td class="letter" id="calque_g">G</td>
+                        <td class="letter" id="calque_h">H</td>
+                        <td class="letter" id="calque_i">I</td>
+                    </tr>
+                    <tr>
+                        <td class="letter" id="calque_j">J</td>
+                        <td class="letter" id="calque_k">K</td>
+                        <td class="letter" id="calque_l">L</td>
+                        <td class="letter" id="calque_m">M</td>
+                        <td class="letter" id="calque_n">N</td>
+                        <td class="letter" id="calque_o">O</td>
+                        <td class="letter" id="calque_p">P</td>
+                        <td class="letter" id="calque_q">Q</td>
+                        <td class="letter" id="calque_r">R</td>
+                    </tr>
+                    <tr>
+                        <td class="letter" id="calque_s">S</td>
+                        <td class="letter" id="calque_t">T</td>
+                        <td class="letter" id="calque_u">U</td>
+                        <td class="letter" id="calque_v">V</td>
+                        <td class="letter" id="calque_w">W</td>
+                        <td class="letter" id="calque_x">X</td>
+                        <td class="letter" id="calque_y">Y</td>
+                        <td class="letter" id="calque_z">Z</td>
+                        <td class="letter" id="calque_0"></td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div class="play_Image">
                 <div class="hangmanImg">
                     <img id="hangman" class="hangmanPic" src="hangmanImg/0.png">
                 </div>
             </div>
-
-            <table id="keyboard" cellspacing="30px">
-                <tr>
-                    <td class="letter" id="calque_a">A</td>
-                    <td class="letter" id="calque_b">B</td>
-                    <td class="letter" id="calque_c">C</td>
-                    <td class="letter" id="calque_d">D</td>
-                    <td class="letter" id="calque_e">E</td>
-                    <td class="letter" id="calque_f">F</td>
-                    <td class="letter" id="calque_g">G</td>
-                    <td class="letter" id="calque_h">H</td>
-                    <td class="letter" id="calque_i">I</td>
-                </tr>
-                <tr>
-                    <td class="letter" id="calque_j">J</td>
-                    <td class="letter" id="calque_k">K</td>
-                    <td class="letter" id="calque_l">L</td>
-                    <td class="letter" id="calque_m">M</td>
-                    <td class="letter" id="calque_n">N</td>
-                    <td class="letter" id="calque_o">O</td>
-                    <td class="letter" id="calque_p">P</td>
-                    <td class="letter" id="calque_q">Q</td>
-                    <td class="letter" id="calque_r">R</td>
-                </tr>
-                <tr>
-                    <td class="letter" id="calque_s">S</td>
-                    <td class="letter" id="calque_t">T</td>
-                    <td class="letter" id="calque_u">U</td>
-                    <td class="letter" id="calque_v">V</td>
-                    <td class="letter" id="calque_w">W</td>
-                    <td class="letter" id="calque_x">X</td>
-                    <td class="letter" id="calque_y">Y</td>
-                    <td class="letter" id="calque_z">Z</td>
-                    <td class="letter" id="calque_0"></td>
-                </tr>
-            </table>
-
-
-            <div id="timer">01:00 </div>
-            <br>
-            <div id="playAgain">
-                <section class=" playAgain flexedItem">
-                    <button onclick="start()">START</button>
-                </section>
-            </div>
         </div>
+    </div>
     </div>
 </body>
 
