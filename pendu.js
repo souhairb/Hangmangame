@@ -59,13 +59,13 @@ var wordToGuess;
 var timePassed;
 var intervalId;
 var imagesArray = [
-  "./hangmanimg/0.png",
-  "./hangmanimg/1.png",
-  "./hangmanimg/2.png",
-  "./hangmanimg/3.png",
-  "./hangmanimg/4.png",
-  "./hangmanimg/5.png",
-  "./hangmanimg/6.png"
+  "./hangmanImg/0.png",
+  "./hangmanImg/1.png",
+  "./hangmanImg/2.png",
+  "./hangmanImg/3.png",
+  "./hangmanImg/4.png",
+  "./hangmanImg/5.png",
+  "./hangmanImg/6.png"
 ];
 var errorCounter = 0;
 //timer
@@ -86,7 +86,7 @@ function timer() {
 
 //DOM MANIPULATION----------------------------------------------------------------------
 let docUnderscore = document.getElementsByClassName("wordUnderscore");
-document.getElementById("hangman").src = "./hangmanimg/0.png";
+document.getElementById("hangman").src = "./hangmanImg/0.png";
 
 
 
